@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
 
-print("goo")
 
 
 
