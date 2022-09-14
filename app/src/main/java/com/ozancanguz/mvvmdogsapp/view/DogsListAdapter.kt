@@ -3,6 +3,7 @@ package com.ozancanguz.mvvmdogsapp.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.mvvmdogsapp.R
 import com.ozancanguz.mvvmdogsapp.model.DogBreed
@@ -47,6 +48,15 @@ class DogsListAdapter(val dogList:ArrayList<DogBreed>):RecyclerView.Adapter<Dogs
 
     }
 
+    //9 - fragment veya activitide bunları yaz
+/*
+    dogslist.apply {
+        layoutManager= LinearLayoutManager(context)
+        adapter=dogListAdapter
+    }
+    ListFragment
+    fragment_detail.xml
 
+*/
 
 }

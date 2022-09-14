@@ -21,7 +21,7 @@
         <TextView
             android:id="@+id/dogName"
             android:text="dog name"
-            text android:textSize="20dp"
+
             android:layout_below="@+id/dogimage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,9 +29,9 @@
             android:layout_margin="5dp"
             ></TextView>
         <TextView
-            android:id="@+id/dogName"
+            android:id="@+id/dogpurpose"
             android:text="dog name"
-            text android:textSize="20dp"
+
             android:layout_below="@+id/dogimage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         <TextView
             android:id="@+id/dogPurpose"
             android:text="dog purpose"
-            text android:textSize="20dp"
+
             android:layout_below="@+id/dogName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         <TextView
             android:id="@+id/dogTemperament"
             android:text="dog temperament"
-            text android:textSize="20dp"
+
             android:layout_below="@+id/dogPurpose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         <TextView
             android:id="@+id/dogLifespan"
             android:text="dog life span"
-            text android:textSize="20dp"
+
             android:layout_below="@+id/dogTemperament"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
