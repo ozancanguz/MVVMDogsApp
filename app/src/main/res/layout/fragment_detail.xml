@@ -28,27 +28,20 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="5dp"
             ></TextView>
-        <TextView
-            android:id="@+id/dogpurpose"
-            android:text="dog name"
 
-            android:layout_below="@+id/dogimage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            ></TextView>
 
         <TextView
             android:id="@+id/dogPurpose"
-            android:text="dog purpose"
-
-            android:layout_below="@+id/dogName"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
+            android:layout_below="@+id/dogName"
             android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            ></TextView>
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="dog purpose"></TextView>
 
         <TextView
             android:id="@+id/dogTemperament"
@@ -63,14 +56,16 @@
 
         <TextView
             android:id="@+id/dogLifespan"
-            android:text="dog life span"
-
-            android:layout_below="@+id/dogTemperament"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
+            android:layout_below="@+id/dogTemperament"
             android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            ></TextView>
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="dog life span"></TextView>
 
 
 
