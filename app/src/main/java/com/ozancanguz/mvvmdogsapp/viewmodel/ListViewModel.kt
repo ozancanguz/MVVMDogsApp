@@ -8,6 +8,7 @@ import com.ozancanguz.mvvmdogsapp.model.DogBreed
 import com.ozancanguz.mvvmdogsapp.model.DogDao
 import com.ozancanguz.mvvmdogsapp.model.DogDatabase
 import com.ozancanguz.mvvmdogsapp.model.DogsApiService
+import com.ozancanguz.mvvmdogsapp.util.SharedPreferencesHelper
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
@@ -21,6 +22,8 @@ class ListViewModel(application: Application):BaseViewModel(application) {
     // retrofit part 3
     private val dogService = DogsApiService()
     private val disposable = CompositeDisposable()
+    private var preferencesHelper=SharedPreferencesHelper(getApplication())
+
 
 
     val dogs = MutableLiveData<List<DogBreed>>()
@@ -82,6 +85,8 @@ class ListViewModel(application: Application):BaseViewModel(application) {
                      dogRetrieved(list)
 
                  }
+         preferencesHelper.saveUpdateTime(System.nanoTime())
+
 
      }
 
