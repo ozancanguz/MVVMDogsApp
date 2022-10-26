@@ -42,14 +42,27 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // 2--
-        viewmodel= ViewModelProviders.of(this).get(ListViewModel::class.java)
+        viewmodel= ViewModelProvider(this).get(ListViewModel::class.java)
         viewmodel.refresh()
 
         dogslist.apply {
             layoutManager=LinearLayoutManager(context)
             adapter=dogListAdapter
         }
+
+        refreshLayout.setOnRefreshListener {
+            dogslist.visibility=View.GONE
+            listerror.visibility=View.GONE
+            loadingview.visibility=View.VISIBLE
+            viewmodel.refresh()
+            refreshLayout.isRefreshing=false
+
+        }
+
+
         observeViewModel()
+
+
 
     }
 

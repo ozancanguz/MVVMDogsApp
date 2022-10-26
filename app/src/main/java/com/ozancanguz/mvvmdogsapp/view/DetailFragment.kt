@@ -42,7 +42,7 @@ class DetailFragment : Fragment() {
 
         }
 
-        viewModel= ViewModelProviders.of(this).get(DetailViewModel::class.java)
+        viewModel= ViewModelProvider (this).get(DetailViewModel::class.java)
         viewModel.fetch()
 
         observeViewModel()

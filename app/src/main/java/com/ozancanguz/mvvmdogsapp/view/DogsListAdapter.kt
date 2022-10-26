@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.mvvmdogsapp.R
 import com.ozancanguz.mvvmdogsapp.model.DogBreed
+import com.ozancanguz.mvvmdogsapp.util.getProgressDrawble
+import com.ozancanguz.mvvmdogsapp.util.loadImage
 import kotlinx.android.synthetic.main.item_dog.view.*
 
 class DogsListAdapter(val dogList:ArrayList<DogBreed>):RecyclerView.Adapter<DogsListAdapter.DogviewHolder>(){
@@ -35,6 +37,10 @@ class DogsListAdapter(val dogList:ArrayList<DogBreed>):RecyclerView.Adapter<Dogs
         holder.view.setOnClickListener {
             Navigation.findNavController(it).navigate(ListFragmentDirections.actionDetailFragment())
         }
+
+        //glide ile sonradan ekledik
+        holder.view.imageview.loadImage(dogList[position].imageUrl, getProgressDrawble(
+            holder.view.imageview.context))
 
     }
 
